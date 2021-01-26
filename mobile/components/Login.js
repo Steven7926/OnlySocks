@@ -11,7 +11,7 @@ const hash = require('./md5');
 
 // const configData = require('./config.json');
 // const BASE_URL = configData.ip;
-var BASE_URL = 'http://54.92.219.60:5000/'
+var BASE_URL = 'https://onlysocks.herokuapp.com/'
 
 function Login() {
     // Hooks for Logging in 

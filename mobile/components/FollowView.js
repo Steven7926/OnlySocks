@@ -7,8 +7,8 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 
 const configData = require('./config.json');
-const BASE_URL = configData.ip;
-//const BASE_URL = 'http://localhost:5000/'; // server ip: 54.146.57.74 
+//const BASE_URL = configData.ip;
+const BASE_URL = 'https://onlysocks.herokuapp.com/'; // server ip: 54.146.57.74
 
 
 class FollowView extends React.Component {

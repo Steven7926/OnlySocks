@@ -4,7 +4,7 @@ import { Alert } from 'react-native';
 
 // const configData = require('./config.json');
 // const BASE_URL = configData.ip;
-const BASE_URL = 'http://54.92.219.60:5000/';
+const BASE_URL = 'https://onlysocks.herokuapp.com/';
 
 const commentAdded = async (postId, userId, comment) => {
 
