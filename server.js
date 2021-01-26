@@ -15,9 +15,18 @@ const path = require('path');
 const { getMaxListeners } = require('process');
 const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require('constants');
 
+/////////////////////////////////////////
+// Added for Heroku deployment.
+const PORT = process.env.PORT || 5000;
+require('dotenv').config();
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json({ limit: '8mb', extended: true }));
+
+/////////////////////////////////////////
+// Added for Heroku deployment.
+app.set('port', (process.env.PORT || 5000));
 
 //////////////////////////////
 // Allows cors to work with react
@@ -30,7 +39,7 @@ app.all('/', function (req, res, next) {
 /////////////////////////////////////////
 const MongoClient = require('mongodb').MongoClient;
 
-const url = 'mongodb+srv://admin:1234@onlysocksdb-oqmqi.mongodb.net/onlysocksdb';
+const url = 'mongodb+srv://Steven:df456b252eebd3a041916e79bccfcbf5@cluster0.qzzoq.mongodb.net/test';
 
 const client = new MongoClient(url);
 client.connect();
@@ -1057,4 +1066,19 @@ app.use((req, res, next) => {
   );
   next();
 });
-app.listen(5000); // start Node + Express server on port 5000
+
+///////////////////////////////////////////////////
+// For Heroku deployment
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
+
+///////////////////////////////////////////////////
+// For Heroku deployment
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html'))
+});
+
+//app.listen(5000); // start Node + Express server on port 5000
+
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}.`);
+});
