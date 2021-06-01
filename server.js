@@ -39,7 +39,7 @@ app.all('/', function (req, res, next) {
 /////////////////////////////////////////
 const MongoClient = require('mongodb').MongoClient;
 
-const url = 'mongodb+srv://Steven:df456b252eebd3a041916e79bccfcbf5@cluster0.qzzoq.mongodb.net/test';
+const url = '';
 
 const client = new MongoClient(url);
 client.connect();
