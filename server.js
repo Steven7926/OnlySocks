@@ -210,8 +210,8 @@ app.post('/api/addNewFav', async (req, res, next) => {
     });
 
     AWS.config.update({
-      accessKeyId: "AKIAI346Q35ZQXJWZEMQ", // Access key ID
-      secretAccessKey: "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", // Secret access key
+      accessKeyId: "accesskeyId", // Access key ID
+      secretAccessKey: "secretaccesskey", // Secret access key
       region: "us-east-1" //Region
     })
 
@@ -270,8 +270,8 @@ app.post('/api/addNewProfilePicture', async (req, res, next) => {
     });
 
     AWS.config.update({
-      accessKeyId: "AKIAI346Q35ZQXJWZEMQ", // Access key ID
-      secretAccessKey: "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", // Secret access key
+      accessKeyId: "accessKeyId", // Access key ID
+      secretAccessKey: "secretAccessKey", // Secret access key
       region: "us-east-1" //Region
     })
 
@@ -326,8 +326,8 @@ app.post('/api/addNewPic', async (req, res, next) => {
   try {
 
     AWS.config.update({
-      accessKeyId: "AKIAI346Q35ZQXJWZEMQ", // Access key ID
-      secretAccessKey: "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", // Secret access key
+      accessKeyId: "accessKeyId", // Access key ID
+      secretAccessKey: "secretAccessKey", // Secret access key
       region: "us-east-1" //Region
     })
 
