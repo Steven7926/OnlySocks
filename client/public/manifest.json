@@ -1,0 +1,25 @@
+{
+  "short_name": "OnlySocks",
+  "name": "You can only post socks",
+  // "icons": [
+  //   {
+  //     "src": "favicon.ico",
+  //     "sizes": "64x64 32x32 24x24 16x16",           // I am commenting these out because it is causing a failed to fetch error
+  //     "type": "image/x-icon"
+  //   },
+  //   {
+  //     "src": "logo192.png",
+  //     "type": "image/png",
+  //     "sizes": "192x192"
+  //   },
+  //   {
+  //     "src": "logo512.png",
+  //     "type": "image/png",
+  //     "sizes": "512x512"
+  //   }
+  // ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

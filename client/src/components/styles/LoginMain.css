@@ -1,0 +1,907 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 12vmin;
+    pointer-events: none;
+}
+
+.App-logo-small {
+    height: 3vmin;
+    pointer-events: none;
+    position: relative;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+
+    .App-logo-small {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #323846;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+}
+
+.Login-header {
+    background-color: #323846;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+}
+
+.loginFrame {
+    background-color: lightgrey;
+    height: 65vh;
+    width: 45vh;
+    align-items: center;
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+}
+
+.loginmessage {
+    font-size: medium;
+}
+
+.signup {
+    font-size: medium !important;
+}
+
+.inputs {
+    border-radius: 3px;
+    height: 3vh;
+    width: 25vh;
+    border: 2px solid rgb(199, 97, 86);
+}
+
+.inputslong {
+    border-radius: 3px;
+    height: 3vh;
+    width: 35vh;
+    border: 2px solid rgb(199, 97, 86);
+}
+
+.button {
+    border-radius: 6px;
+    height: 5vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.buttonspace {
+    padding-top: 2vh;
+}
+
+.link {
+    cursor: pointer;
+    font-size: medium !important;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid rgb(199, 97, 86);
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+hr.smol {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 60vh;
+}
+
+hr.following {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 94vh;
+}
+
+.pad {
+    padding-top: 0%;
+}
+
+.footer {
+    padding-top: 4%;
+}
+
+.statusbuttons {
+    margin-right: 1vh;
+    margin-top: 39vh;
+}
+
+/* Modal Classes */
+.modal {
+    width: 65vh;
+    height: 45vh;
+    background-color: lightgrey;
+    border: 2px solid white;
+    margin-right: auto;
+    margin-left: 4vh;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    padding: 0 !important;
+}
+
+.modal2 {
+    width: 65vh;
+    height: 45vh;
+    background-color: lightgrey;
+    border: 2px solid white;
+    margin-right: auto;
+    margin-left: 4vh;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+}
+
+.modal3 {
+    width: 65vh;
+    height: 45vh;
+    background-color: lightgrey;
+    border: 2px solid white;
+    margin-right: auto;
+    margin-left: 4vh;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+}
+
+.nobackdrop {
+    position: relative;
+    width: 75vh;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+}
+
+.backdrop {
+    position: relative;
+    width: 75vh;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.nobackdrop2 {
+    position: relative;
+    width: 75vh;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+}
+
+.backdrop2 {
+    position: relative;
+    width: 75vh;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.nobackdrop3 {
+    position: relative;
+    width: 75vh;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+}
+
+.backdrop3 {
+    position: relative;
+    width: 75vh;
+    z-index: 9999;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* MainUI Classes*/
+
+.sidediv {
+    width: 45vh;
+    height: 45vh;
+    margin-right: auto;
+    margin-left: 4vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: lightgrey;
+    float: left;
+    position: fixed;
+}
+
+.sidedivbot {
+    width: 45vh;
+    height: 45vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.user {
+    width: 43vh;
+    height: auto;
+    margin-left: 1vh;
+    margin-top: 2vh;
+    overflow: auto;
+}
+
+.thisis {
+    margin-left: 17vh;
+    font-size: medium;
+    float: left;
+}
+
+.userprofilepic {
+    width: 15vh;
+    height: 18vh;
+    border: 4px solid;
+    margin-left: 1vh;
+    border-color: rgb(199, 97, 86);
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+}
+
+.mainInterface {
+    background-color: #323846;
+    min-height: 100vh;
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    overflow: auto;
+}
+
+.headerMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoutbut {
+    border-radius: 6px;
+    height: 5vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    float: left;
+    margin-left: 2vh;
+}
+
+.addpicbutton {
+    background-color: rgb(199, 97, 86);
+    border-radius: 15px;
+    border-color: rgb(199, 97, 86);
+    cursor: pointer;
+    margin-top: -3vh;
+    float: right;
+}
+
+.addpicbuttonremoved {
+    display: none;
+}
+
+.statusContent {
+    width: 110vh;
+    height: auto;
+    margin-right: 2vh;
+    margin-left: 54vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.trendingsocks {
+    width: 35vh;
+    height: 97vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: lightgrey;
+    position: fixed;
+}
+
+.navbutton {
+    border-radius: 6px;
+    height: 3vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 18vh;
+    margin-top: 1vh;
+    float: left;
+}
+
+.navbuttonselected {
+    border-radius: 6px;
+    height: 3vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: yellow;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 18vh;
+    margin-top: 1vh;
+    float: left;
+}
+
+.horizlinemain {
+    width: 98vh;
+    border-radius: 5px;
+    border: 2px solid rgb(199, 97, 86);
+}
+
+.horizlinetop {
+    width: 30vh;
+    border-radius: 5px;
+    border: 2px solid rgb(199, 97, 86);
+}
+
+.headingdivmain {
+    padding-right: 90vh;
+}
+
+.headingdivtop {
+}
+
+.mainContentHead {
+    margin-top: 1vh;
+}
+
+.favSocks {
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    margin-left: 2vh;
+    margin-top: 1vh;
+}
+
+.addfavsockbut {
+    border-radius: 5px;
+    height: 3vh;
+    width: 7vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.uploadfavsocks {
+    float: left;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+}
+
+.status {
+    width: 90vh;
+    height: auto;
+    float: left;
+    margin-left: 2vh;
+    margin-right: 1vh;
+    border-radius: 6px;
+    font-family: Arial;
+    resize: none;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.wizywig {
+    margin-left: 73vh;
+}
+
+.attachpicture {
+    border-radius: 5px;
+    height: 3vh;
+    width: 6vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.fullsend {
+    border-radius: 5px;
+    height: 3vh;
+    width: 20vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.statusdiv {
+    width: 100vh;
+    height: auto;
+}
+
+.feedcontainer {
+    width: 108vh;
+    height: auto;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.sockSearch {
+    width: 26vh;
+    height: 2vh;
+    border-radius: 6px;
+    font-family: Arial;
+    border: 1px solid black;
+    margin-left: 2vh;
+}
+
+.topsockcontainer {
+    width: 33vh;
+    height: 82vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    margin-top: 6vh;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.search {
+    float: left;
+    margin-left: 1vh;
+}
+
+.filein {
+    display: none;
+}
+
+.popsocks {
+    width: 45vh;
+    height: 10vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20vh;
+    border-radius: 5px;
+    text-align: left;
+    background-color: lightgrey;
+}
+
+.statusupdate {
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: text;
+    height: 4vh;
+    width: 50vh;
+    text-align: left;
+    color: grey;
+}
+
+.wrapperhead {
+    overflow: hidden;
+}
+
+.location {
+    float: left;
+    margin-left: 2vh;
+    width: 8vh;
+}
+
+.promptmodal {
+    float: left;
+    margin-left: 2vh;
+}
+
+.modalstatus {
+    width: 94vh;
+    height: 52vh;
+    background-color: lightgrey;
+    border: 2px solid dimgrey;
+    margin-right: auto;
+    margin-left: 4vh;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+}
+
+.modalfollow {
+    width: 110vh;
+    height: auto;
+    background-color: lightgrey;
+    margin-right: auto;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 99;
+    position: fixed;
+}
+
+.statbutton {
+    border-radius: 6px;
+    height: 4vh;
+    width: 28vh;
+    float: right;
+    margin-right: 1vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.writebutton {
+    border: none;
+    width: 4vh;
+    height: 3vh;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+/* status classes*/
+.comment {
+    width: 40vh;
+    height: 3vh;
+    border: 2px solid rgb(199, 97, 86);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    font-family: 'Arial';
+    padding-left: 10px;
+}
+
+.divstatus {
+    border: 1px solid white;
+    text-align: left;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 104vh;
+    margin-left: 2vh;
+    text-decoration-color: white;
+}
+
+.likebutton {
+    width: 10vh;
+    height: 4vh;
+    border: 2px solid rgb(199, 97, 86);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    margin-left: 31%;
+}
+
+.commentbutton {
+    width: 15vh;
+    height: 4vh;
+    border: 2px solid rgb(199, 97, 86);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1%;
+    background-color: rgb(199, 97, 86);
+    color: white;
+}
+
+.commentinput {
+    margin-left: 10px;
+    margin-bottom: 2vh;
+    height: auto;
+}
+
+.marginleft {
+    margin-left: 20px;
+}
+
+.mediumfont {
+    font-size: medium;
+}
+
+.marginstat {
+    margin-left: 5vh;
+}
+
+.stathr {
+    border: 1px solid lightgrey;
+    width: 94vh;
+    margin-right: 3vh;
+    border-radius: 10px;
+}
+
+/* Classes for ImageUploader*/
+
+.removeButton {
+    position: absolute;
+    float: left;
+    margin-top: -1vh;
+    margin-left: 4vh;
+    cursor: pointer;
+    background-color: rgb(199, 97, 86);
+    border-radius: 4px;
+    border: none;
+}
+
+.removeButtonfav {
+    position: absolute;
+    float: left;
+    margin-top: -1vh;
+    margin-left: 10vh;
+    cursor: pointer;
+    background-color: rgb(199, 97, 86);
+    border-radius: 4px;
+    border: none;
+    z-index: 999;
+}
+
+.addfavsockbutremoved {
+    display: none;
+}
+
+.entirediv {
+    float: left;
+    margin-left: 2vh;
+}
+
+.sockpicturesize {
+    width: 12vh;
+    height: 10vh;
+    display: none;
+}
+
+.sockpicturesizeshow {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: white;
+    position: fixed;
+}
+
+.profilesizing {
+    width: 15vh;
+    height: 18vh;
+    border-radius: 16px;
+}
+
+.overallprofile {
+    float: left;
+}
+
+.overlaybutton {
+    margin-top: 3vh;
+    position: absolute;
+}
+
+.status p:first-of-type img {
+    border-radius: 10px;
+    margin-right: 3vh;
+}
+
+.marginstat p:first-of-type img {
+    border: 0px solid black;
+    border-radius: 10px;
+    margin-right: 3vh;
+}
+
+.addfollower {
+    font-weight: bold;
+    float: left;
+    margin-top: 1vh;
+    margin-left: 7vh;
+}
+
+.searchforfollow {
+    border-radius: 16px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: text;
+    height: 3vh;
+    width: 50vh;
+    text-align: left;
+    color: black;
+    padding-left: 5px;
+    margin-left: 1vh;
+}
+
+.followpeeps {
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #323846;
+    width: 40vh;
+    height: 5vh;
+    margin-left: 10%;
+    text-decoration-color: white;
+    border: 4px solid white;
+}
+
+.searchfollowpeeps {
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #323846;
+    width: 80vh;
+    height: 5vh;
+    margin-left: 13%;
+    text-decoration-color: white;
+    border: 4px solid white;
+}
+
+.followButton {
+    border-radius: 10px;
+    height: 4vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid #323846;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5vh;
+    margin-top: 5px;
+}
+
+.searchfollowButton {
+    border-radius: 10px;
+    height: 4vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid #323846;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 45vh;
+    margin-top: 5px;
+}
+
+.addfollowerbutton {
+    border-radius: 10px;
+    height: 4vh;
+    width: 12vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.modalHead {
+    margin-left: 8vh;
+}
+
+.Following {
+    float: left;
+    width: 50vh;
+}
+
+.Followers {
+    float: right;
+    width: 50vh;
+}
+
+.followingScroll {
+    float: left;
+    width: 50vh;
+    overflow: auto;
+}
+
+.followersScroll {
+    float: right;
+    width: 50vh;
+    overflow: auto;
+}
+
+
+.followSearchScroll {
+    margin-top: 1vh;
+    height: 85vh;
+    overflow: auto;
+}
+
+.backtofollow {
+    border-radius: 6px;
+    height: 4vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 10vh;
+}
+
+.fetchnewsocksbut {
+    border-radius: 6px;
+    height: 3vh;
+    width: 15vh;
+    background-color: rgb(199, 97, 86);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-left: 23vh;
+}
